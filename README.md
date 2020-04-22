@@ -16,5 +16,7 @@ Current BeeGFS configuration, and commands used to generate the benchmark and tr
 
 ### Others
 *ethernet* shows current ethernet limitation due to MTU.  
-*system* shows current system settings, PnetCDF, and compiler versions.
+*system* shows current system settings, PnetCDF, and compiler versions.  
+*nodes_structure* pbsnodes output, showing size of mixcoatl cluster.  
+*paraview* commands used to compare data sets in paraview using Filter->Programmable Filter
 
