@@ -1,0 +1,44 @@
+BeeGFS benchmarking was conducted in two phases. One was on the storage node itself, 
+And the other from the compute nodes, which are housed in a separate building from the BeeGFS cluster. 
+
+The  BeeGFS PFS has two client, two metadata, and four storage nodes as described in the paper.
+
+Benchmarking on the PFS was done using BeeGFS ‘storagebench’ program using the following command:
+beegfs-ctl --storage-bench --alltargets --write --blocksize=512K --size=200G --threads=16
+This was done to remove any barriers due to communication between the cluster sending the command 
+and the actual PFS. Benchmarking with ioZone and IOR were done from the compute nodes, to reflect 
+the data transfers from the models tested. They were all submitted as batch scripts to the PBS system. 
+IOR tested the multi-node properties of the file system I/O rate, from 2 to 64 processes. For the
+batch commands used and the  results, see 
+https://github.com/jbrzensk/SC20_GCCOM_SubFlow_AE-AD/tree/master/IOR .  
+ioZone tested the I/O speed for an increasing number of threads. For the batch commands used for 
+ioZone and the results see https://github.com/jbrzensk/SC20_GCCOM_SubFlow_AE-AD/tree/master/ioZone.  
+
+For the I/O measurements of the geophysical models, measurements needed to be done on the BeeGFS 
+cluster.  This was done with the command:
+beegfs-ctl --serverstats --perserver --interval=1 --nodetype=storage
+
+An example of output is here:
+===== time index: 1587425114 =====
+
+nodeID write_KiB  read_KiB   reqs   qlen bsy
+     3  112640         0     222      0   0
+     4   56320         0     112      0   1
+     5       0         0       2      0   0
+     6   55808         0     111      0   1
+
+This gives read and write values averaged by BeeGFS over each second for each storage node. Total 
+I/O would be the sum of the values for the read and write figures, for this particular example, 
+a write speed of 224.768MB/s . For the paper, the highest values over a time period were found 
+and an average was taken over three samples (3 seconds) at this peak. Three samples were chosen 
+if the average change between the three samples was less than 15 percent of the highest value 
+of the readings.  If three samples were not available, the largest single time sample was kept 
+as the peak value for that time period.  
+
+For differences in output between the models, results were compared in the program paraview, and 
+filtered based on the difference at any time step. GCCOM was checked against the temperature 
+variable, which was the most rapidly changing variable in the simulation. SubFlow was checked 
+against the pressure variable, which is also the most rapidly changing variable in the 
+simulation. The commands used in paraview are at 
+https://github.com/jbrzensk/SC20_GCCOM_SubFlow_AE-AD/blob/master/paraview_difference.txt
+
