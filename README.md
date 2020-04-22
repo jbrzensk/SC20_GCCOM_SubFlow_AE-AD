@@ -15,6 +15,7 @@ batch scripts and results.
 Current BeeGFS configuration, and commands used to generate the benchmark and track I/O for the paper.
 
 ### Others
+*submission* text sent in mini report as teh AD file.
 *ethernet* shows current ethernet limitation due to MTU.  
 *system* shows current system settings, PnetCDF, and compiler versions.  
 *nodes_structure* pbsnodes output, showing size of mixcoatl cluster.  
