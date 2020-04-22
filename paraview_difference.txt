@@ -1,0 +1,11 @@
+# Command for finding the difference in the data sets
+- Select the two data sets in the file browser
+- Filter -> Alphabetical -> Programmable Filter
+
+# 'T' is temperature variable for GCCOM
+# 'P' is pressure variable from SubFlow
+
+# Command is as follows:
+phi_0 = inputs[0].PointData['P']
+phi_1 = inputs[1].PointData['P']
+output.PointData.append(phi_1 - phi_0, 'difference')
