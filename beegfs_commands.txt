@@ -1,0 +1,8 @@
+beegfs-ctl --serverstats --perserver --interval=1 --nodetype=storage
+
+# Infiniband Identification
+lspci | grep Mellanox
+ibstat
+
+
+
