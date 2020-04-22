@@ -14,5 +14,7 @@ batch scripts and results.
 ### BeeGFS
 Current BeeGFS configuration, and commands used to generate the benchmark and track I/O for the paper.
 
-
+### Others
+*ethernet* shows current ethernet limitation due to MTU.  
+*system* shows current system settings, PnetCDF, and compiler versions.
 
