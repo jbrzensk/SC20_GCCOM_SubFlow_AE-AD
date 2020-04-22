@@ -1,0 +1,35 @@
+#PBS -N bonnie++
+#PBS -r n
+#PBS -o $PBS_JOBNAME.out
+#PBS -e $PBS_JOBNAME.err
+#PBS -j oe
+#PBS -l nodes=1:ppn=16
+## specify wallclock time
+##PBS -l walltime=365:00:00:00
+#PBS -V
+
+cd $PBS_O_WORKDIR
+echo Master process running on `hostname`
+echo Directory is `pwd`
+echo PBS has allocated the following nodes:
+echo `cat $PBS_NODEFILE`
+echo Starting execution at `date`
+PATH=$PBS_O_PATH
+
+## PBS has selected the nodes; now set the number of CPUs
+NPROCS=`wc -l < $PBS_NODEFILE`
+echo This job has allocated $NPROCS CPUs
+
+## create nodefile (with duplicates removed) for use by mpdboot
+NODEFILE_UNIQ=/tmp/`basename ${PBS_NODEFILE}`.uniq
+cat $PBS_NODEFILE | uniq > $NODEFILE_UNIQ
+echo "NODEFILE_UNIQ:"
+sed -i 's/$/-ib/' $NODEFILE_UNIQ
+export PBS_NODEFILE=${NODEFILE_UNIQ}
+cat ${PBS_NODEFILE}
+
+./bonnie++ \
+    -f  \
+    -r `free -m | grep 'Mem:' | awk '{print $2}'` -s $(echo "scale=0;`free -m | grep 'Mem:' | awk '{print $2} 
+'`*2" | bc -l)
+

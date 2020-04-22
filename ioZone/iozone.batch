@@ -1,0 +1,46 @@
+#!/bin/sh
+#PBS -V
+#PBS -l nodes=1:ppn=16
+#PBS -N tuned_ioZone
+#PBS -joe
+#PBS -q batch
+#PBS -l walltime=24:30:00
+#PBS -o timedIOzone.out
+
+cd $PBS_O_WORKDIR
+
+echo Running on host `hostname`
+echo Time is `date`              #giving incorrect AM/PM
+echo Directory is `pwd`
+echo JobID is $PBS_JOBID
+
+## Use the following number of processors
+cat $PBS_NODEFILE > NodesTimed.log
+
+export I_MPI_LARGE_SCALE_THRESHOLD=8192 # set to a value larger than the number of MPI-tasks used !!!
+
+NODE_LIST='cat $PBS_NODEFILE'
+echo "................................................"
+echo "................................................"
+echo "$PBS_TASKNUM $PBS_NODENUM"
+echo $NODE_LIST
+work_dir=$PBS_O_WORKDIR/iozoneOutput
+iozone_dir=$PBS_O_WORKDIR
+nodes_file=$PBS_O_WORKDIR/NodesTimed.log
+results_file=${iozone_dir}/results.log
+rm -rf ${work_dir}
+mkdir ${work_dir}
+cd ${work_dir}
+for (( x=2; x <= 6; x++ )); do
+ num_procs=$((2**${x}));
+ header="processes: ${num_procs}"
+ echo ${header}
+ printf "\n\n\n${header}\n\n" >> ${results_file}
+ ../iozone -i 0 -i 1 -c -e -w -r 1m -t ${num_procs} -s $((2560/${num_procs}))g -+n >> ${results_file}
+done
+
+echo "Ending Parallel Run for $np processes at `date` ."
+echo "................................................"
+echo "------------------------------------------------"
+echo " "
+echo " "
