@@ -1,0 +1,45 @@
+#!/bin/sh
+#PBS -V
+#PBS -l nodes=4:ppn=16
+#PBS -N test_IOR
+#PBS -joe
+#PBS -q batch
+#PBS -l walltime=24:30:00
+#PBS -o test_IOR_all.out
+cd $PBS_O_WORKDIR
+
+echo Running on host `hostname`
+echo Time is `date`              #giving incorrect AM/PM
+echo Directory is `pwd`
+echo JobID is $PBS_JOBID
+
+## Use the following number of processors
+for np in 64 48 32 16 8 4
+##for np in 16
+do
+if [ $np -lt 9 ]
+then
+   propn=2
+else
+   let "propn=$np/4"
+fi
+#echo $PBSNODEFILE > pbsnodefile.txt
+cat $PBS_NODEFILE > NodesTimed.$np
+
+export I_MPI_LARGE_SCALE_THRESHOLD=8192
+
+NODE_LIST='cat $PBS_NODEFILE'
+echo "................................................"
+echo "................................................"
+echo "Parallel Run For $np processors, with $propn per node."
+echo "Starting Parallel Run for $np processes at `date` ."
+echo "$PBS_TASKNUM $PBS_NODENUM"
+
+mpirun -n $np ./ior -t 512k -b 1g -s 16 -F -C -e
+
+echo "Ending Parallel Run for $np processes at `date` ."
+echo "................................................"
+echo "------------------------------------------------"
+echo " "
+echo " "
+done
