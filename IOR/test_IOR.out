@@ -1,0 +1,56 @@
+Running on host cn02
+Time is Tue Apr 14 15:14:56 PDT 2020
+Directory is /mnt/beegfs/brzenski/Pargccom/PO_gccom/TestCases/LockRelease/LE_1601x6x801/IOR/ior
+JobID is 15433.mixcoatl.sdsu.edu
+................................................
+................................................
+Parallel Run For 64 processors, with  per node.
+Starting Parallel Run for 64 processes at Tue Apr 14 15:14:56 PDT 2020 .
+1 0
+IOR-3.3.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Tue Apr 14 15:15:48 2020
+Command line        : ./ior -t 1m -b 1g -s 16 -F -C -e
+Machine             : Linux cn02
+TestID              : 0
+StartTime           : Tue Apr 14 15:15:48 2020
+Path                : /mnt/beegfs/brzenski/Pargccom/PO_gccom/TestCases/LockRelease/LE_1601x6x801/IOR/ior
+FS                  : 1921.1 TiB   Used FS: 1.5%   Inodes: 0.0 Mi   Used Inodes: -nan%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 4
+tasks               : 64
+clients per node    : 16
+repetitions         : 1
+xfersize            : 1 MiB
+blocksize           : 1 GiB
+aggregate filesize  : 1 TiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     1120.89    1120.89    0.912051    1048576    1024.00    0.253100   935.49     18.30      935.49     0   
+read      1121.85    1121.85    0.852121    1048576    1024.00    0.008749   934.68     112.91     934.68     0   
+remove    -          -          -           -          -          -          -          -          0.025933   0   
+Max Write: 1120.89 MiB/sec (1175.33 MB/sec)
+Max Read:  1121.85 MiB/sec (1176.35 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        1120.89    1120.89    1120.89       0.00    1120.89    1120.89    1120.89       0.00  935.48839         NA            NA     0     64  16    1   1     1        1         0    0     16 1073741824  1048576 1048576.0 POSIX      0
+read         1121.85    1121.85    1121.85       0.00    1121.85    1121.85    1121.85       0.00  934.68397         NA            NA     0     64  16    1   1     1        1         0    0     16 1073741824  1048576 1048576.0 POSIX      0
+Finished            : Tue Apr 14 15:46:58 2020
+Ending Parallel Run for 64 processes at Tue Apr 14 15:47:06 PDT 2020 .
+................................................
+------------------------------------------------
+ 
+ 
