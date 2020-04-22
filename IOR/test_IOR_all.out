@@ -1,6 +1,6 @@
 Running on host cn02
 Time is Wed Apr 15 09:30:01 PDT 2020
-Directory is /mnt/beegfs/brzenski/Pargccom/PO_gccom/TestCases/LockRelease/LE_1601x6x801/IOR/ior
+Directory is /mnt/beegfs/########/Pargccom/PO_gccom/TestCases/LockRelease/LE_1601x6x801/IOR/ior
 JobID is 15443.mixcoatl.sdsu.edu
 ................................................
 ................................................
@@ -13,7 +13,7 @@ Command line        : ./ior -t 512k -b 1g -s 16 -F -C -e
 Machine             : Linux cn02
 TestID              : 0
 StartTime           : Wed Apr 15 09:30:23 2020
-Path                : /mnt/beegfs/brzenski/Pargccom/PO_gccom/TestCases/LockRelease/LE_1601x6x801/IOR/ior
+Path                : /mnt/beegfs/########/Pargccom/PO_gccom/TestCases/LockRelease/LE_1601x6x801/IOR/ior
 FS                  : 1921.1 TiB   Used FS: 1.5%   Inodes: 0.0 Mi   Used Inodes: -nan%
 
 Options: 
@@ -65,7 +65,7 @@ Command line        : ./ior -t 512k -b 1g -s 16 -F -C -e
 Machine             : Linux cn02
 TestID              : 0
 StartTime           : Wed Apr 15 09:34:41 2020
-Path                : /mnt/beegfs/brzenski/Pargccom/PO_gccom/TestCases/LockRelease/LE_1601x6x801/IOR/ior
+Path                : /mnt/beegfs/########/Pargccom/PO_gccom/TestCases/LockRelease/LE_1601x6x801/IOR/ior
 FS                  : 1921.1 TiB   Used FS: 1.5%   Inodes: 0.0 Mi   Used Inodes: -nan%
 
 Options: 
