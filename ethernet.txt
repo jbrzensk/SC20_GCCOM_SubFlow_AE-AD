@@ -1,0 +1,16 @@
+em1       Link encap:Ethernet  HWaddr F0:1F:AF:AA:EE:A1  
+          inet addr:###############################################
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:2725072407 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2512779607 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:10000 
+          RX bytes:3330169968233 (3.0 TiB)  TX bytes:2983125759132 (2.7 TiB)
+
+em2       Link encap:Ethernet  HWaddr F0:1F:AF:AA:EE:A3  
+          inet addr:###############################################
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:69478229 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:21831982 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:10000 
+          RX bytes:9558817458 (8.9 GiB)  TX bytes:1683941708 (1.5 GiB)
+
