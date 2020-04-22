@@ -253,7 +253,7 @@ sda                                  8:0    0 185.3G  0 disk
 7f:13.6 System peripheral: Intel Corporation Xeon E5/Core i7 Ring to QuickPath Interconnect Link 1 Performance Monitor (rev 07)
 PnetCDF Version:    	1.12.0
 PnetCDF Release date:	September 30, 2019
-PnetCDF configure: 	prefix=/mnt/beegfs/brzenski/pnetcdf --with-mpi=/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/ --enable-large-file-test --enable-profiling
+PnetCDF configure: 	prefix=/mnt/beegfs/########/pnetcdf --with-mpi=/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/ --enable-large-file-test --enable-profiling
 MPICC:  /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64//bin/mpicc -g -O2
 MPICXX: /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64//bin/mpicxx -g -O2
 MPIF77: /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64//bin/mpif77 -g -O2
