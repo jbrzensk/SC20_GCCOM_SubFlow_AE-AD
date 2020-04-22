@@ -1,0 +1,120 @@
+cn02-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577812,varattr=,jobs=,state=free,netload=? 15201,gres=,message=ERROR:  precancel epilog failed,loadave=0.00,ncpus=8,physmem=67044140kb,availmem=64688136kb,totmem=67044140kb,idletime=4294770,nusers=0,nsessions=0,uname=Linux cn02 2.6.32-754.27.1.el6.x86_64 #1 SMP Tue Jan 28 14:11:45 UTC 2020 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn03-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577811,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67044140kb,availmem=64460316kb,totmem=67044140kb,idletime=18272607,nusers=0,nsessions=0,uname=Linux cn03 2.6.32-696.10.1.el6.x86_64 #1 SMP Tue Aug 22 18:51:35 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn04-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577817,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64642076kb,totmem=67062316kb,idletime=83800599,nusers=0,nsessions=0,uname=Linux cn04 2.6.32-696.10.1.el6.x86_64 #1 SMP Tue Aug 22 18:51:35 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn05-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577811,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64587364kb,totmem=67062316kb,idletime=72562631,nusers=0,nsessions=0,uname=Linux cn05 2.6.32-696.10.3.el6.x86_64 #1 SMP Tue Sep 26 18:14:22 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn06-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577806,varattr=,jobs=,state=free,netload=? 15201,gres=,message=ERROR:  precancel epilog failed,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64641208kb,totmem=67062316kb,idletime=33009717,nusers=0,nsessions=0,uname=Linux cn06 2.6.32-573.22.1.el6.x86_64 #1 SMP Wed Mar 23 03:35:39 UTC 2016 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn07-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577843,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64620888kb,totmem=67062316kb,idletime=80398635,nusers=0,nsessions=0,uname=Linux cn07 2.6.32-696.10.3.el6.x86_64 #1 SMP Tue Sep 26 18:14:22 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn08-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577822,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64574068kb,totmem=67062316kb,idletime=18580905,nusers=0,nsessions=0,uname=Linux cn08 2.6.32-696.3.1.el6.x86_64 #1 SMP Tue May 30 19:52:55 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn09-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577831,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64428984kb,totmem=67062316kb,idletime=24346796,nusers=0,nsessions=0,uname=Linux cn09 2.6.32-696.6.3.el6.x86_64 #1 SMP Wed Jul 12 14:17:22 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn10-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577813,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64366220kb,totmem=67062316kb,idletime=89676817,nusers=0,nsessions=0,uname=Linux cn10 2.6.32-696.3.1.el6.x86_64 #1 SMP Tue May 30 19:52:55 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn11-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577817,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64214684kb,totmem=67062316kb,idletime=89676818,nusers=0,nsessions=0,uname=Linux cn11 2.6.32-696.3.1.el6.x86_64 #1 SMP Tue May 30 19:52:55 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn12-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577834,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64340240kb,totmem=67062316kb,idletime=23907015,nusers=0,nsessions=0,uname=Linux cn12 2.6.32-696.10.1.el6.x86_64 #1 SMP Tue Aug 22 18:51:35 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn13-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577818,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=63550492kb,totmem=67062316kb,idletime=10149,nusers=0,nsessions=0,uname=Linux cn13 3.10.0-957.27.2.el7.x86_64 #1 SMP Mon Jul 29 17:46:05 UTC 2019 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn14-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577837,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64051804kb,totmem=67062316kb,idletime=83799955,nusers=0,nsessions=0,uname=Linux cn14 2.6.32-696.10.1.el6.x86_64 #1 SMP Tue Aug 22 18:51:35 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn15-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577817,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=63473348kb,totmem=67062316kb,idletime=17075002,nusers=0,nsessions=0,uname=Linux cn15 2.6.32-696.3.1.el6.x86_64 #1 SMP Tue May 30 19:52:55 UTC 2017 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+
+cn16-0
+     state = free
+     np = 16
+     ntype = cluster
+     status = rectime=1587577812,varattr=,jobs=,state=free,netload=? 15201,gres=,loadave=0.00,ncpus=8,physmem=67062316kb,availmem=64140980kb,totmem=67062316kb,idletime=15969985,nusers=0,nsessions=0,uname=Linux cn16 2.6.32-754.6.3.el6.x86_64 #1 SMP Tue Oct 9 17:27:49 UTC 2018 x86_64,opsys=linux
+     mom_service_port = 15002
+     mom_manager_port = 15003
+

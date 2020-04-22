@@ -7,7 +7,7 @@ INTEL_LICENSE_FILE=/mnt/beegfs/app/intel/licenses:/mnt/beegfs/app/intel/compiler
 SHELL=/bin/bash
 TERM=xterm-256color
 HISTSIZE=1000
-SSH_CLIENT=########
+SSH_CLIENT=192.168.0.1 39690 22
 GDBSERVER_MIC=/mnt/beegfs/app/intel/debugger_2017/gdb/targets/mic/bin/gdbserver
 LIBRARY_PATH=/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.4:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.4:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.4:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.4:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/daal/../tbb/lib/intel64_lin/gcc4.4
 SELINUX_USE_CURRENT_RANGE=
@@ -25,7 +25,7 @@ PATH=/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/bin/intel64:
 MAIL=/var/spool/mail/USER
 _=/bin/env
 TBBROOT=/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/tbb
-PWD=/mnt/beegfs/USER/Pargccom/PO_gccom/TestCases/LockRelease/LE_1601x6x801/tests
+PWD=/mnt/beegfs/USER/SC20_GCCOM_SubFlow_AE-AD
 LANG=en_US.UTF-8
 GDB_CROSS=/mnt/beegfs/app/intel/debugger_2017/gdb/intel64_mic/bin/gdb-mic
 MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
@@ -42,7 +42,7 @@ CONVERGE_ROOT=/app/converge/converge-2.1.0
 LOGNAME=USER
 CVS_RSH=ssh
 QTLIB=/usr/lib64/qt-3.3/lib
-SSH_CONNECTION=########################
+SSH_CONNECTION=192.168.0.1 39690 192.168.0.2 22
 CLASSPATH=/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib/mpi.jar:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/daal.jar:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib/mpi.jar:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/daal.jar:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib/mpi.jar:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/daal.jar:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib/mpi.jar:/mnt/beegfs/app/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/daal.jar
 MODULESHOME=/usr/share/Modules
 LESSOPEN=||/usr/bin/lesspipe.sh %s
@@ -81,30 +81,30 @@ L3 cache:              20480K
 NUMA node0 CPU(s):     0,2,4,6,8,10,12,14
 NUMA node1 CPU(s):     1,3,5,7,9,11,13,15
 MemTotal:       132100340 kB
-MemFree:        128708372 kB
+MemFree:        128707932 kB
 Buffers:          260440 kB
-Cached:          1294676 kB
+Cached:          1294540 kB
 SwapCached:         4008 kB
-Active:           778796 kB
-Inactive:         819080 kB
-Active(anon):      45504 kB
+Active:           779076 kB
+Inactive:         818644 kB
+Active(anon):      45476 kB
 Inactive(anon):     9872 kB
-Active(file):     733292 kB
-Inactive(file):   809208 kB
+Active(file):     733600 kB
+Inactive(file):   808772 kB
 Unevictable:       47212 kB
 Mlocked:           30860 kB
 SwapTotal:       4194300 kB
 SwapFree:        4124476 kB
-Dirty:              6932 kB
+Dirty:             12040 kB
 Writeback:             0 kB
-AnonPages:         86460 kB
+AnonPages:         86456 kB
 Mapped:            17492 kB
 Shmem:              2552 kB
-Slab:             455196 kB
-SReclaimable:     198424 kB
-SUnreclaim:       256772 kB
-KernelStack:        9648 kB
-PageTables:         5400 kB
+Slab:             456288 kB
+SReclaimable:     199396 kB
+SUnreclaim:       256892 kB
+KernelStack:        9632 kB
+PageTables:         5408 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
@@ -251,3 +251,16 @@ sda                                  8:0    0 185.3G  0 disk
 7f:13.4 Performance counters: Intel Corporation Xeon E5/Core i7 QuickPath Interconnect Agent Ring Registers (rev 07)
 7f:13.5 Performance counters: Intel Corporation Xeon E5/Core i7 Ring to QuickPath Interconnect Link 0 Performance Monitor (rev 07)
 7f:13.6 System peripheral: Intel Corporation Xeon E5/Core i7 Ring to QuickPath Interconnect Link 1 Performance Monitor (rev 07)
+PnetCDF Version:    	1.12.0
+PnetCDF Release date:	September 30, 2019
+PnetCDF configure: 	prefix=/mnt/beegfs/brzenski/pnetcdf --with-mpi=/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/ --enable-large-file-test --enable-profiling
+MPICC:  /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64//bin/mpicc -g -O2
+MPICXX: /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64//bin/mpicxx -g -O2
+MPIF77: /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64//bin/mpif77 -g -O2
+MPIF90: /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64//bin/mpif90 -g -O2
+mpif90 for the Intel(R) MPI Library 2017 Update 3 for Linux*
+Copyright(C) 2003-2017, Intel Corporation.  All rights reserved.
+mpigcc for the Intel(R) MPI Library 2017 Update 3 for Linux*
+Copyright(C) 2003-2017, Intel Corporation.  All rights reserved.
+mpigxx for the Intel(R) MPI Library 2017 Update 3 for Linux*
+Copyright(C) 2003-2017, Intel Corporation.  All rights reserved.

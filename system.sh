@@ -17,3 +17,9 @@ lsscsi -s
 module list
 nvidia-smi
 (lshw -short -quiet -sanitize || lspci) | cat
+
+/mnt/beegfs/brzenski/pnetcdf/bin/pnetcdf_version
+
+mpif90 -v
+mpicc -v
+mpicxx -v
